@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "title": "First Post",
+    "summary": "Summary of the .",
+    "date": "2023-11-24",
+    "image": "images/post1.jpg",
+    "content_file": "posts/post1.html"
+  },
+  {
+    "id": 2,
+    "title": "Second Post",
+    "summary": "Summary of the second post...",
+    "date": "2023-11-24",
+    "image": "images/post2.png",
+    "content_file": "posts/post2.html"
+  }
+]

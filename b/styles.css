@@ -1,0 +1,87 @@
+/* Basic Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #fd0505;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+article {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.post-meta {
+    font-size: 0.85em;
+    color: gray;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Home Page Thumbnail Settings */
+.post-image-homepage {
+    width: 100%; /* Takes full width of the column */
+    height: 500px; /* Set fixed height here or adjust as needed */
+    object-fit: cover; /* Scales the image nicely while maintaining aspect ratio */
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+/* Grid layout for posts (2-column setup) */
+#posts {
+    display: grid;
+    gap: 20px; /* Gap between grid items */
+    grid-template-columns: repeat(2, 1fr); /* 2 equal columns */
+    margin-bottom: 20px;
+}
+
+/* Responsive design: stack in 1 column for small screens (mobile) */
+@media only screen and (max-width: 768px) {
+    #posts {
+        grid-template-columns: 1fr; /* 1 column on small screens */
+    }
+}
+
+/* Post Detail Image Settings */
+.post-image-detail {
+    width: 100%; /* Full width */
+    height: 800px; /* Fixed height for post details page */
+    object-fit: cover; /* Preserve aspect ratio */
+    display: block;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
